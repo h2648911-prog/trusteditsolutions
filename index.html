@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from trusteditsolutions.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Oct 2025 21:22:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trusted IT Solutions - Premium IT Services</title>
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #7e22ce;
+            --accent: #22c55e;
+            --light: #f8fafc;
+            --dark: #1e293b;
+            --text: #334155;
+            --background: #ffffff;
+            --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--background);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        section {
+            padding: 100px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: var(--gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+            transition: all 0.5s ease;
+            z-index: -1;
+        }
+        
+        .btn:hover::before {
+            width: 100%;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+        }
+        
+        .btn-accent {
+            background: var(--accent);
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.2);
+        }
+        
+        .btn-accent::before {
+            background: #16a34a;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.8rem;
+            color: var(--dark);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gradient);
+            border-radius: 2px;
+        }
+        
+        .section-title p {
+            font-size: 1.1rem;
+            color: var(--text);
+            max-width: 700px;
+            margin: 20px auto 0;
+        }
+        
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: 500;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            font-size: 2.2rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--gradient);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        .header-btn {
+            padding: 12px 25px;
+            font-size: 0.9rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding-top: 180px;
+            padding-bottom: 120px;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(126, 34, 206, 0.05) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(126, 34, 206, 0.1) 100%);
+            z-index: 0;
+        }
+        
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: -100px;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
+            z-index: 0;
+        }
+        
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-text {
+            flex: 1;
+            padding-right: 30px;
+            animation: fadeInLeft 1s ease;
+        }
+        
+        .hero-text h1 {
+            font-size: 3.5rem;
+            color: var(--dark);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero-text h1 span {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .hero-text p {
+            font-size: 1.2rem;
+            color: var(--text);
+            margin-bottom: 40px;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .hero-image {
+            flex: 1;
+            text-align: center;
+            animation: fadeInRight 1s ease;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            transform: perspective(1000px) rotateY(-10deg);
+            transition: all 0.5s ease;
+        }
+        
+        .hero-image img:hover {
+            transform: perspective(1000px) rotateY(0);
+        }
+        
+        /* About Section */
+        .about {
+            background-color: white;
+            position: relative;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+        
+        .about-image {
+            flex: 1;
+            position: relative;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100%;
+            height: 100%;
+            border: 3px solid var(--primary);
+            border-radius: 20px;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+        
+        .about-features {
+            margin-top: 30px;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.2);
+        }
+        
+        .feature-content h3 {
+            font-size: 1.3rem;
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+        
+        .feature-content p {
+            margin-bottom: 0;
+            color: var(--text);
+        }
+        
+        /* Services Section */
+        .services {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, rgba(126, 34, 206, 0.03) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--gradient);
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-card:hover::before {
+            width: 100%;
+            opacity: 0.05;
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 25px;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .service-card p {
+            color: var(--text);
+            margin-bottom: 25px;
+        }
+        
+        .service-card .btn {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            background-color: white;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-card {
+            background-color: var(--light);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text);
+            margin-bottom: 20px;
+            position: relative;
+            padding: 0 20px;
+        }
+        
+        .testimonial-text::before {
+            content: """;
+            font-size: 5rem;
+            color: var(--primary);
+            opacity: 0.2;
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+            border: 3px solid var(--primary);
+            padding: 2px;
+        }
+        
+        .author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .author-details h4 {
+            font-size: 1.1rem;
+            color: var(--dark);
+        }
+        
+        .author-details p {
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+        
+        /* Why Choose Us Section */
+        .why-choose-us {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, rgba(126, 34, 206, 0.03) 100%);
+        }
+        
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .reason {
+            background-color: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .reason:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .reason-icon {
+            font-size: 3rem;
+            margin-bottom: 25px;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .reason h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .reason p {
+            color: var(--text);
+        }
+        
+        /* Pricing Section */
+        .pricing {
+            background-color: white;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .pricing-card {
+            background-color: var(--light);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pricing-card.popular {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+        
+        .pricing-card.popular:hover {
+            transform: scale(1.05) translateY(-5px);
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: 15px;
+            right: -35px;
+            background: var(--gradient);
+            color: white;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .pricing-header h3 {
+            font-size: 1.5rem;
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+        
+        .price {
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .price span {
+            font-size: 1rem;
+            color: var(--text);
+            font-weight: 400;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+        .pricing-features li {
+            padding: 12px 0;
+            color: var(--text);
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, rgba(126, 34, 206, 0.03) 100%);
+        }
+        
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+        }
+        
+        .faq-item {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-question {
+            font-size: 1.2rem;
+            color: var(--dark);
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            color: var(--text);
+            padding-top: 15px;
+            border-top: 1px solid #e5e7eb;
+            display: none;
+        }
+        
+        .faq-active .faq-answer {
+            display: block;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: white;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+        
+        .contact-details h3 {
+            font-size: 1.2rem;
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+        
+        .contact-details p {
+            color: var(--text);
+        }
+        
+        .contact-form {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, rgba(126, 34, 206, 0.03) 100%);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--dark);
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #d1d5db;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 80px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-col h3 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            color: white;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+        
+        .footer-col p {
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+        
+        .footer-col ul {
+            list-style: none;
+        }
+        
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-col ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-col ul li a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+        }
+        
+        /* Call Now Button Fixed */
+        .call-now-fixed {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 99, 235, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero-content,
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .hero-text,
+            .about-text {
+                padding-right: 0;
+                margin-bottom: 50px;
+            }
+            
+            .pricing-card.popular {
+                transform: scale(1);
+            }
+            
+            .pricing-card.popular:hover {
+                transform: translateY(-5px);
+            }
+            
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 10px 10px;
+            }
+            
+            .header-btn {
+                margin-top: 15px;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+            
+            .contact-form {
+                padding: 25px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            section {
+                padding: 70px 0;
+            }
+            
+            .hero {
+                padding-top: 150px;
+                padding-bottom: 80px;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .about-image::before {
+                display: none;
+            }
+        }
+    </style>
+	<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/68ba25e3109d7be2aa214f4c/1j4bi814c';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</head>
+<body>
+<!-- Your existing content -->
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/68ba25e3109d7be2c9f41083/1j4bi814c';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+
+<!-- Mirrored from trusteditsolutions.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Oct 2025 21:22:48 GMT -->
+</html>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#home" class="logo"><i class="fas fa-laptop-code"></i>Trusted<span>IT</span> Solutions</a>
+           
+        </div>
+        
+
+        
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Premium IT Solutions for <span>Business Growth</span></h1>
+                <p>We provide cutting-edge technology solutions to help businesses thrive in the digital age. Our expert team delivers reliable IT services tailored to your specific needs.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn">Get Started Today</a>
+                    <a href="#services" class="btn btn-accent">Our Services</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="IT Solutions">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Trusted IT Solutions</h2>
+                <p>Learn more about our company and our commitment to excellence</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Our Team">
+                </div>
+                <div class="about-text">
+                    <h2>We Are Trusted IT Solutions</h2>
+                    <p>Founded in 2010, Trusted IT Solutions has been at the forefront of providing comprehensive IT services to businesses of all sizes. Our team of certified professionals is dedicated to delivering exceptional results.</p>
+                    <p>We understand that technology is the backbone of modern business, and we strive to provide solutions that enhance productivity, security, and growth.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Certified Professionals</h3>
+                                <p>Our team holds industry-leading certifications</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Award-Winning Service</h3>
+                                <p>Recognized for excellence in IT solutions</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>500+ Happy Clients</h3>
+                                <p>We've helped businesses achieve their goals</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 30px;">
+                        <a href="#contact" class="btn">Contact Us</a>
+                        <a href="tel:+18882541126" class="btn btn-accent" style="margin-left: 15px;">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Comprehensive IT solutions tailored to your business needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Network Solutions</h3>
+                    <p>We design, implement, and maintain secure and reliable network infrastructures that keep your business connected and protected.</p>
+                    <a href="#contact" class="btn">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cyber Security</h3>
+                    <p>Protect your business from cyber threats with our comprehensive security solutions including firewalls, antivirus, and monitoring.</p>
+                    <a href="#contact" class="btn">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Services</h3>
+                    <p>Migrate to the cloud with confidence. We offer cloud consulting, migration, and management services for businesses of all sizes.</p>
+                    <a href="#contact" class="btn">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>IT Infrastructure</h3>
+                    <p>From servers to workstations, we provide complete IT infrastructure solutions that ensure reliability and performance.</p>
+                    <a href="#contact" class="btn">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Backup & Recovery</h3>
+                    <p>Ensure business continuity with our robust backup and disaster recovery solutions tailored to your specific needs.</p>
+                    <a href="#contact" class="btn">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>IT Support</h3>
+                    <p>Our responsive IT support team is available 24/7 to resolve issues quickly and minimize downtime for your business.</p>
+                    <a href="#contact" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="tel:+18882541126" class="btn btn-accent">Call Now for IT Support</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>See what our clients have to say about our services</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>Trusted IT Solutions transformed our IT infrastructure. Their team is professional, knowledgeable, and always available when we need them. Highly recommended!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="../randomuser.me/api/portraits/men/32.jpg" alt="John Smith">
+                        </div>
+                        <div class="author-details">
+                            <h4>John Smith</h4>
+                            <p>CEO, TechInnovate Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>We've been working with TrustedTech for over 3 years now. Their cybersecurity solutions have protected our business from multiple threats. Peace of mind is priceless.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="../randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="author-details">
+                            <h4>Sarah Johnson</h4>
+                            <p>Director, FinanceCorp LLC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>The cloud migration service was seamless. Trusted IT Solutions handled everything from planning to execution with minimal disruption to our operations.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="../randomuser.me/api/portraits/men/62.jpg" alt="Michael Chen">
+                        </div>
+                        <div class="author-details">
+                            <h4>Michael Chen</h4>
+                            <p>CTO, Global Retail Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="why-choose-us">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Trusted IT Solutions</h2>
+                <p>Discover what sets us apart from the competition</p>
+            </div>
+            <div class="reasons-grid">
+                <div class="reason">
+                    <div class="reason-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Our team is available around the clock to address your IT issues and ensure minimal downtime for your business.</p>
+                </div>
+                <div class="reason">
+                    <div class="reason-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certified Experts</h3>
+                    <p>Our professionals hold industry-leading certifications and undergo continuous training to stay ahead of technology trends.</p>
+                </div>
+                <div class="reason">
+                    <div class="reason-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Cost-Effective Solutions</h3>
+                    <p>We offer competitive pricing without compromising on quality, ensuring you get the best value for your investment.</p>
+                </div>
+                <div class="reason">
+                    <div class="reason-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Quick Response Time</h3>
+                    <p>We understand that time is critical. Our average response time for critical issues is under 15 minutes.</p>
+                </div>
+                <div class="reason">
+                    <div class="reason-icon">
+                        <i class="fas fa-tailoring"></i>
+                    </div>
+                    <h3>Customized Solutions</h3>
+                    <p>We don't believe in one-size-fits-all. Our solutions are tailored to meet your specific business needs and goals.</p>
+                </div>
+                <div class="reason">
+                    <div class="reason-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Proactive Security</h3>
+                    <p>We don't just fix problems - we prevent them. Our proactive approach keeps your systems secure and running smoothly.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="tel:+18882541126" class="btn btn-accent">Call Now to Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Transparent Pricing Plans</h2>
+                <p>Choose the plan that works best for your business needs</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic Plan</h3>
+                        <div class="price">$49<span>/Yr</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>24/7 Monitoring</li>
+                        <li>Remote Support</li>
+                        <li>Monthly Maintenance</li>
+                        <li>Basic Security</li>
+                        <li>Email Support</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Started</a>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Business Plan</h3>
+                        <div class="price">$99<span>/Yr</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>All Basic Features</li>
+                        <li>On-Site Support (5 hours)</li>
+                        <li>Advanced Security</li>
+                        <li>Weekly Maintenance</li>
+                        <li>Priority Support</li>
+                        <li>Cloud Backup (100GB)</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise Plan</h3>
+                        <div class="price">$149<span>/Yr</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>All Business Features</li>
+                        <li>Unlimited On-Site Support</li>
+                        <li>Enterprise-Grade Security</li>
+                        <li>24/7 Dedicated Technician</li>
+                        <li>Custom Solutions</li>
+                        <li>1TB Cloud Backup</li>
+                        <li>Strategic IT Planning</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Started</a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <p>Need a custom solution? <a href="tel:+18882541126" style="color: var(--primary); text-decoration: none; font-weight: 600;">Call now</a> to discuss your requirements!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our services</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What areas do you serve?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide IT services nationwide with our remote support capabilities, and we offer on-site services in the metropolitan area and surrounding regions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How quickly can you respond to IT issues?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For critical issues, we typically respond within 15 minutes remotely. On-site response times vary based on location but are usually within 2-4 hours for emergency situations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer customized IT solutions?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we specialize in creating tailored IT solutions that address your specific business needs, challenges, and goals. We don't believe in one-size-fits-all approaches.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What makes your security solutions different?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our security approach is multi-layered and proactive. We combine advanced technology with continuous monitoring and employee training to create comprehensive protection against threats.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can you help with cloud migration?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We have extensive experience helping businesses migrate to the cloud seamlessly with minimal disruption to operations. We handle planning, execution, and post-migration support.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I get started with your services?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Getting started is easy! Simply <a href="tel:+18882541126" style="color: var(--primary);">call us</a> or fill out our contact form. We'll schedule a free consultation to assess your needs and recommend the right solutions for your business.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for a free consultation</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Let's Talk About Your IT Needs</h2>
+                    <p>Fill out the form or contact us directly using the information below. Our team will respond promptly to discuss how we can help your business thrive.</p>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Visit Us</h3>
+                            <p>30 N Gould St Ste R Sheridan, WY 82801<br>.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>1(888) 254-1126<br>.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p>info@TrusteditSolutions.com<br>support@TrusteditSolutions.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Business Hours</h3>
+                            <p>Monday-Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 1:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+				<form action="https://formsubmit.co/jonew064@gmail.com" method="POST">
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service" class="form-control">
+                                <option value="">Select a service</option>
+                                <option value="network">Network Solutions</option>
+                                <option value="security">Cyber Security</option>
+                                <option value="cloud">Cloud Services</option>
+                                <option value="infrastructure">IT Infrastructure</option>
+                                <option value="backup">Data Backup & Recovery</option>
+                                <option value="support">IT Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Submit Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Trusted IT Solutions</h3>
+                    <p>Your trusted partner for comprehensive IT solutions that drive business growth and ensure operational excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#why-choose-us">Why Choose Us</a></li>
+                        <li><a href='privacypolicy.html'>Privacy Policy</a></li>
+                        <li><a href='termsandconditions.html'>Terms and Conditions</a></li>
+						
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Network Solutions</a></li>
+                        <li><a href="#services">Cyber Security</a></li>
+                        <li><a href="#services">Cloud Services</a></li>
+                        <li><a href="#services">IT Infrastructure</a></li>
+                        <li><a href="#services">Data Backup & Recovery</a></li>
+                                               
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>30 N Gould St Ste R Sheridan, WY 82801</li>
+                        <li><i class="fas fa-phone-alt" style="margin-right: 10px;"></i> 1(888) 254-1126</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> info@TrusteditSolutions.com</li>
+                    </ul>
+                    <a href="tel:+18882541126" class="btn" style="margin-top: 20px;">Call Now</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Trusted IT Solutions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+   <!-- Floating Vibrating Call Button -->
+<style>
+  .call-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(145deg, #ff1a1a, #1a3dff);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 34px;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(255,0,0,0.6), 0 0 30px rgba(0,0,255,0.6);
+    animation: pulse 2s infinite;
+    z-index: 9999;
+  }
+
+  /* Vibrating phone icon */
+  .call-float i {
+    animation: vibrate 0.4s infinite;
+  }
+
+  /* Glowing circle effect */
+  @keyframes pulse {
+    0% { box-shadow: 0 0 10px rgba(255,0,0,0.6), 0 0 20px rgba(0,0,255,0.6); }
+    50% { box-shadow: 0 0 25px rgba(255,0,0,0.9), 0 0 40px rgba(0,0,255,0.9); }
+    100% { box-shadow: 0 0 10px rgba(255,0,0,0.6), 0 0 20px rgba(0,0,255,0.6); }
+  }
+
+  @keyframes vibrate {
+    0% { transform: rotate(0); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0); }
+  }
+
+  /* Hover effect */
+  .call-float:hover {
+    transform: scale(1.1);
+    background: linear-gradient(145deg, #1a3dff, #ff1a1a);
+    transition: 0.3s ease-in-out;
+  }
+</style>
+
+<!-- Old Telephone Icon (Font Awesome) -->
+<a href="tel:+18882541126" class="call-float">
+  <i class="fa fa-phone"></i>
+</a>
+
+<!-- Font Awesome for phone icon -->
+<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('faq-active');
+                
+                // Rotate chevron icon
+                const icon = question.querySelector('i');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will contact you shortly.');
+            this.reset();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            } else {
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
